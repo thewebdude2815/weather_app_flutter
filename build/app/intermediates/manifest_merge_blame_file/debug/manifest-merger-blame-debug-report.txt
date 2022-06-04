@@ -1,0 +1,95 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.weather_app_project"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->D:\weather_app_project\android\app\src\main\AndroidManifest.xml:4:5-66
+14-->D:\weather_app_project\android\app\src\main\AndroidManifest.xml:4:22-64
+15    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->D:\weather_app_project\android\app\src\main\AndroidManifest.xml:5:5-81
+15-->D:\weather_app_project\android\app\src\main\AndroidManifest.xml:5:22-78
+16    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+16-->D:\weather_app_project\android\app\src\main\AndroidManifest.xml:6:5-85
+16-->D:\weather_app_project\android\app\src\main\AndroidManifest.xml:6:22-82
+17
+18    <application
+19        android:name="android.app.Application"
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.6.0] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\122df2e57d294d1a53db26bbc3b813c1\core-1.6.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+23        android:label="Weather App - Project"
+24        android:usesCleartextTraffic="true" >
+25        <activity
+26            android:name="com.example.weather_app_project.MainActivity"
+27            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+28            android:exported="true"
+29            android:hardwareAccelerated="true"
+30            android:launchMode="singleTop"
+31            android:theme="@style/LaunchTheme"
+32            android:windowSoftInputMode="adjustResize" >
+33
+34            <!--
+35                 Specifies an Android theme to apply to this Activity as soon as
+36                 the Android process has started. This theme is visible to the user
+37                 while the Flutter UI initializes. After that, this theme continues
+38                 to determine the Window background behind the Flutter UI.
+39            -->
+40            <meta-data
+41                android:name="io.flutter.embedding.android.NormalTheme"
+42                android:resource="@style/NormalTheme" />
+43
+44            <intent-filter>
+45                <action android:name="android.intent.action.MAIN" />
+46
+47                <category android:name="android.intent.category.LAUNCHER" />
+48            </intent-filter>
+49        </activity>
+50        <!--
+51             Don't delete the meta-data below.
+52             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+53        -->
+54        <meta-data
+55            android:name="flutterEmbedding"
+56            android:value="2" />
+57
+58        <uses-library
+58-->[androidx.window:window:1.0.0-beta04] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+59            android:name="androidx.window.extensions"
+59-->[androidx.window:window:1.0.0-beta04] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+60            android:required="false" />
+60-->[androidx.window:window:1.0.0-beta04] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+61        <uses-library
+61-->[androidx.window:window:1.0.0-beta04] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+62            android:name="androidx.window.sidecar"
+62-->[androidx.window:window:1.0.0-beta04] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+63            android:required="false" />
+63-->[androidx.window:window:1.0.0-beta04] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\03c633e46d75bfb21f082f0417f55161\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+64
+65        <activity
+65-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\3679fa9be1d67d14c72169d3353f14d4\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+66            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+66-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\3679fa9be1d67d14c72169d3353f14d4\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+67            android:exported="false"
+67-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\3679fa9be1d67d14c72169d3353f14d4\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+68            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+68-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\3679fa9be1d67d14c72169d3353f14d4\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+69
+70        <meta-data
+70-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\a7975ba3cb0c3630bd14453686890431\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+71            android:name="com.google.android.gms.version"
+71-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\a7975ba3cb0c3630bd14453686890431\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+72            android:value="@integer/google_play_services_version" />
+72-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Ahmad\.gradle\caches\transforms-2\files-2.1\a7975ba3cb0c3630bd14453686890431\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+73    </application>
+74
+75</manifest>
